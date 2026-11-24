@@ -12,6 +12,31 @@ Imagine a mutex that contains a mutable account object with an integer balance:
 - **Transfer the account:** Take the original account out and replace it with a fresh one before releasing the lock. If no other references to the original remain, it can be handed off without sharing it.
 - **Leak the account:** Return the original account without replacing it. The caller and the mutex still refer to the same mutable object. A caller can now change it without taking the lock.
 
+```swift
+import Synchronization
+
+final class Account {
+    var balance = 100
+}
+
+func compareAccessPatterns() {
+    let mutex = Mutex(Account())
+
+    let snapshot = mutex.withLock { $0.balance }
+    print(snapshot) // A copy of the balance.
+
+    let transferred = mutex.withLock { account in
+        let original = account
+        account = Account()
+        return original
+    }
+    transferred.balance += 50 // The mutex now holds a different account.
+
+    // Don't do this: it returns the replacement without removing it.
+    // let leaked = mutex.withLock { $0 }
+}
+```
+
 That's the distinction behind `sending` in `Mutex.withLock`: a non-`Sendable` value can cross an isolation boundary when it's transferred safely. That doesn't make it safe to share the same object.
 
 ## What did the Swift concurrency bug allow?

@@ -1,0 +1,23 @@
+title: Swift Learning Journal
+description: A personal learning path for Swift, organized by topic.
+theme: minima
+
+plugins:
+  - jekyll-relative-links
+
+header_pages:
+  - topics/fundamentals/index.md
+  - topics/concurrency/index.md
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

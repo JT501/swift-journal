@@ -73,4 +73,6 @@ Both `withLock` calls return the same account without removing it from the mutex
 
 **What I want to remember:** Share the mutex, not the mutable object inside it. Return a snapshot unless I actually need to hand off the object.
 
+See [Actors vs. Locks: When to Use Each](actors-vs-locks.md) for help choosing between a mutex and an actor.
+
 [Back to Swift Concurrency](index.md)

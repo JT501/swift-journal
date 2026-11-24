@@ -9,5 +9,7 @@ title: Swift Concurrency
 5. [Actors: Where `await` Belongs](actors.md) — synchronous work inside an actor and asynchronous access from outside.
 6. [Actor Enqueuing: One Hop, Several Operations](actor-enqueuing.md) — batch synchronous actor work and understand what `await` says about scheduling.
 7. [Actors vs. Locks: When to Use Each](actors-vs-locks.md) — choose based on how callers need to access shared state.
+8. [Actor Reentrancy: What Can Change Across `await`?](actor-reentrancy.md) — avoid acting on stale state after a suspension.
+9. [Actor Performance: Measure the Work, Not Just the Hop](actor-performance.md) — batch related work and compare equivalent workloads.
 
 [Back to the learning path](../../index.md)

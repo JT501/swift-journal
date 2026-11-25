@@ -15,5 +15,6 @@ title: Swift Concurrency
 11. [Region-Based Isolation: Safe Transfer Without Sendable](isolation-regions.md) — how Swift tracks aliases and proves a non-`Sendable` handoff safe.
 12. [Sending Values: Making a Handoff Explicit](sending-values.md) — disconnected parameters and results, without making the type `Sendable`.
 13. [Sending Closures: The Captures Go Too](sending-closures.md) — closure transfers, nested captures, and the handoffs in `Mutex.withLock`.
+14. [MainActor by Default: A Default, Not a Guarantee](mainactor-default.md) — target settings, opt-outs, and protocol-driven inference.
 
 [Back to the learning path](../../index.md)

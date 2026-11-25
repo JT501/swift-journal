@@ -11,5 +11,6 @@ title: Swift Concurrency
 7. [Actors vs. Locks: When to Use Each](actors-vs-locks.md) — choose based on how callers need to access shared state.
 8. [Actor Reentrancy: What Can Change Across `await`?](actor-reentrancy.md) — avoid acting on stale state after a suspension.
 9. [Actor Performance: Measure the Work, Not Just the Hop](actor-performance.md) — batch related work and compare equivalent workloads.
+10. [Isolated, nonisolated, and nonisolated(nonsending)](isolated-vs-nonisolated.md) — where isolation comes from and when an async function inherits it.
 
 [Back to the learning path](../../index.md)

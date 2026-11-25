@@ -12,5 +12,6 @@ title: Swift Concurrency
 8. [Actor Reentrancy: What Can Change Across `await`?](actor-reentrancy.md) — avoid acting on stale state after a suspension.
 9. [Actor Performance: Measure the Work, Not Just the Hop](actor-performance.md) — batch related work and compare equivalent workloads.
 10. [Isolated, nonisolated, and nonisolated(nonsending)](isolated-vs-nonisolated.md) — where isolation comes from and when an async function inherits it.
+11. [Region-Based Isolation: Safe Transfer Without Sendable](isolation-regions.md) — how Swift tracks aliases and proves a non-`Sendable` handoff safe.
 
 [Back to the learning path](../../index.md)

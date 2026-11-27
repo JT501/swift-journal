@@ -1,4 +1,4 @@
-# Swift Learning Journal
+# Swift Journal
 
 A personal learning path for Swift. Notes live in topic folders and can be read on GitHub or published as a Jekyll site.
 

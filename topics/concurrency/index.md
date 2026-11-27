@@ -17,4 +17,4 @@ title: Swift Concurrency
 13. [Sending Closures: The Captures Go Too](sending-closures.md) — closure transfers, nested captures, and the handoffs in `Mutex.withLock`.
 14. [MainActor by Default: A Default, Not a Guarantee](mainactor-default.md) — target settings, opt-outs, and protocol-driven inference.
 
-[Back to the learning path](../../index.md)
+[Back to the home page](../../index.md)

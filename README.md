@@ -1,13 +1,13 @@
 # Swift Journal
 
-A personal learning path for Swift. Notes live in topic folders and can be read on GitHub or published as a Jekyll site.
+A personal collection of Swift notes, organized by topic and readable on GitHub or as a Jekyll site.
 
-- [Browse the learning path](index.md)
-- [Swift fundamentals](topics/fundamentals/index.md)
+- [Browse the topics](index.md)
+- [Swift concurrency](topics/concurrency/index.md)
 
 ## Add a note
 
-Create a Markdown file in a topic folder, such as `topics/fundamentals/optionals.md`. Start it with:
+Create a Markdown file in a topic folder, such as `topics/concurrency/my-note.md`. Start it with:
 
 ```yaml
 ---

@@ -4,7 +4,7 @@ title: "TCA: The Composable Architecture"
 
 The Composable Architecture (TCA) organizes a feature around state, actions, a reducer, and a store. These notes start from small counters, forms, and lists. No video or sample app is required.
 
-## Learning path
+## Reading order
 
 1. [Foundations](foundations.md) — state, actions, reducers, and the store.
 2. [Effects and Cancellation](effects-and-cancellation.md) — asynchronous work that feeds actions back into the feature.
@@ -37,4 +37,4 @@ The examples target TCA 1.26.2 in Swift 6 language mode with nonisolated default
 
 The SwiftUI snippets compile in the validation package, and all eight reducer/observation tests pass. This doesn't verify rendered layouts or UI interaction.
 
-[Back to the learning path](../../index.md)
+[Back to the home page](../../index.md)

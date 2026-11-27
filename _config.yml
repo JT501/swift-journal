@@ -6,7 +6,6 @@ plugins:
   - jekyll-relative-links
 
 header_pages:
-  - topics/fundamentals/index.md
   - topics/concurrency/index.md
   - topics/tca/index.md
 

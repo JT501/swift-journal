@@ -4,6 +4,8 @@ title: "TCA: The Composable Architecture"
 
 The Composable Architecture (TCA) organizes a feature around state, actions, a reducer, and a store. These notes start from small counters, forms, and lists. No video or sample app is required.
 
+TCA uses **unidirectional data flow**: view → action → reducer → updated state → view. See [the `EditForm` flow](composition-and-bindings.md#follow-one-title-edit) for how this works across a parent and child.
+
 ## Reading order
 
 1. [Foundations](foundations.md) — state, actions, reducers, and the store.

@@ -95,6 +95,14 @@ The parent view can pass `store.scope(\.form, action: \.form)` to `EditFormView`
 
 If several sibling reducers must share a modifier such as `.ifLet` or `.forEach`, group them in `CombineReducers` and apply the modifier to the group. Without such a modifier, a reducer builder already combines siblings; an extra wrapper isn't needed.
 
+## Follow one title edit
+
+Suppose the title field changes from “Note” to “Notes”:
+
+![Typing sends a binding action from EditFormView through the scoped store. The parent reducer tree routes it to EditForm, where BindingReducer updates form.title. The scoped store exposes the updated title to the view.](assets/edit-form-flow.svg)
+
+Actions travel from the child view into the parent’s reducer tree, while updated state flows back to the child view. That’s one loop, not two-way state mutation: the binding sends an action rather than writing directly to parent state. The parent can also react to child actions, but here it leaves title edits to `EditForm` and updates `savedTitle` only when Save is tapped.
+
 ## Bindings can trigger additional logic
 
 This example uses generic binding actions for the slider controls and an explicit event for title edits:
